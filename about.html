@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brew & Beans - About</title>
+  <meta name="description" content="Learn the Brew & Beans story, our values, and how we bring community together through coffee." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=OpenSans:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased font-[OpenSans]" style="background-color: #F5DEB3;">
+  <!-- NAV -->
+  <header>
+    <nav class="bg-white border-b border-gray-200 fixed w-full z-40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <a href="index.html" class="text-2xl font-bold text-[#3C2415] font-[Montserrat]">Brew & Beans</a>
+          <div class="hidden md:flex items-center space-x-6 text-base">
+            <a href="index.html" class="hover:text-[#8B4513]">Home</a>
+            <a href="menu.html" class="hover:text-[#8B4513]">Menu</a>
+            <a href="about.html" class="hover:text-[#8B4513]">About</a>
+            <a href="contact.html" class="hover:text-[#8B4513]">Contact</a>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button id="mobile-menu-button" class="text-[#3C2415] hover:text-[#8B4513] focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden px-2 pt-2 pb-3 space-y-1">
+        <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-[#3C2415] hover:bg-[#f3efe3]">Home</a>
+        <a href="menu.html" class="block px-3 py-2 rounded-md text-base font-medium text-[#3C2415] hover:bg-[#f3efe3]">Menu</a>
+        <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-[#3C2415] hover:bg-[#f3efe3]">About</a>
+        <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-[#3C2415] hover:bg-[#f3efe3]">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-16">
+    <section class="min-h-screen flex items-center justify-center relative bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1658124927533-991e4fbc26b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwyfHxjb3p5JTIwY29mZmVlJTIwc2hvcCUyMGludGVyaW9yJTIwd2l0aCUyMGN1c3RvbWVycyUyMGFuZCUyMGJhcmlzdGElMjBhdCUyMHdvcmt8ZW58MHwwfHx8MTc1OTczODcyNXww&ixlib=rb-4.1.0&q=80&w=1080');">
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div class="relative z-10 text-center text-white px-4 max-w-2xl">
+        <h1 class="text-4xl md:text-5xl font-bold font-[Montserrat] mb-4">Our Story</h1>
+        <p class="text-lg md:text-xl mb-6">At Brew & Beans, we’re on a mission to craft extraordinary coffee experiences while building a warm, inclusive community around every cup.</p>
+      </div>
+    </section>
+
+    <section class="py-12 bg-white/90">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-2xl font-bold font-[Montserrat] mb-4 text-[#3C2415]">Our Values</h2>
+          <ul class="list-disc pl-5 space-y-2 text-gray-700">
+            <li>Quality: in every bean, cup, and bite.</li>
+            <li>Community: a welcoming space for all.</li>
+            <li>Sustainability: ethical sourcing and waste reduction.</li>
+            <li>Craft: care in roasting, brewing, and baking.</li>
+          </ul>
+        </div>
+        <div>
+          <img src="https://images.pexels.com/photos/9566348/pexels-photo-9566348.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Sleek coffee shop space with shelves" class="w-full rounded-xl shadow" />
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 bg-[#F5DEB3]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-sm text-gray-700">Interested in more about our sourcing partners and roasting process? Reach out and we’ll share our story in detail.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#3C2415] text-white mt-8">
+    <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-2xl font-bold mb-2 font-[Montserrat]">Brew & Beans</h3>
+        <p class="text-sm text-[#f3f0ea]">Story, values, and the people behind your cup.</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-2 font-[Montserrat]">Contact</h4>
+        <p class="text-sm text-[#f3f0ea]">123 Roast Lane, Coffee District</p>
+        <p class="text-sm text-[#f3f0ea]">info@brewandbeans.example</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-2 font-[Montserrat]">Hours</h4>
+        <p class="text-sm text-[#f3f0ea]">Mon-Fri: 6:30am - 6:00pm</p>
+        <p class="text-sm text-[#f3f0ea]">Sat-Sun: 7:00am - 5:00pm</p>
+      </div>
+    </div>
+    <div class="border-t border-gray-600 py-4 text-center text-sm text-gray-300">© 2025 Brew & Beans. Locally roasted since 2020.</div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
