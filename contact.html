@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brew & Beans - Contact</title>
+  <meta name="description" content="Contact Brew & Beans for questions, events, or catering. We’d love to hear from you." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=OpenSans:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased font-[OpenSans]" style="background-color: #F5DEB3;">
+  <!-- NAV -->
+  <header>
+    <nav class="bg-white border-b border-gray-200 fixed w-full z-40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <a href="index.html" class="text-2xl font-bold text-[#3C2415] font-[Montserrat]">Brew & Beans</a>
+          <div class="hidden md:flex items-center space-x-6 text-base">
+            <a href="index.html" class="hover:text-[#8B4513]">Home</a>
+            <a href="menu.html" class="hover:text-[#8B4513]">Menu</a>
+            <a href="about.html" class="hover:text-[#8B4513]">About</a>
+            <a href="contact.html" class="hover:text-[#8B4513]">Contact</a>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button id="mobile-menu-button" class="text-[#3C2415] hover:text-[#8B4513] focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden px-2 pt-2 pb-3 space-y-1">
+        <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-[#3C2415] hover:bg-[#f3efe3]">Home</a>
+        <a href="menu.html" class="block px-3 py-2 rounded-md text-base font-medium text-[#3C2415] hover:bg-[#f3efe3]">Menu</a>
+        <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-[#3C2415] hover:bg-[#f3efe3]">About</a>
+        <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-[#3C2415] hover:bg-[#f3efe3]">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-16 pb-12">
+    <!-- HERO -->
+    <section class="min-h-screen flex items-center justify-center relative bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/33409064/pexels-photo-33409064.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');">
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div class="relative z-10 text-center text-white px-4 max-w-2xl">
+        <h1 class="text-4xl md:text-5xl font-bold font-[Montserrat] mb-4">Contact Brew & Beans</h1>
+        <p class="text-lg md:text-xl mb-6">We’d love to hear from you. Reach out for questions, events, or catering inquiries.</p>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-12 bg-white/90">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <form id="contact-form" class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Your Name</label>
+            <input type="text" name="name" required class="w-full mt-1 p-3 rounded border border-gray-300" placeholder="Jane Doe" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Email</label>
+            <input type="email" name="email" required class="w-full mt-1 p-3 rounded border border-gray-300" placeholder="you@example.com" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Message</label>
+            <textarea name="message" rows="5" required class="w-full mt-1 p-3 rounded border border-gray-300" placeholder="Your message..."></textarea>
+          </div>
+          <button type="submit" class="bg-[#D2B48C] text-[#3C2415] px-6 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-[#D2B48C]/50 transition">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#3C2415] text-white mt-8">
+    <div class="max-w-7xl mx-auto px-4 py-6 text-center text-sm">© 2025 Brew & Beans. All rights reserved.</div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+    // Simple form handling (demo)
+    const form = document.getElementById('contact-form');
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you! Your message has been received.');
+        form.reset();
+      });
+    }
+  </script>
+</body>
+</html>
