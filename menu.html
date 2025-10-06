@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brew & Beans - Menu</title>
+  <meta name="description" content="Explore Brew & Beans menu: espresso, lattes, special drinks, and freshly baked pastries." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=OpenSans:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased font-[OpenSans]" style="background-color: #F5DEB3;">
+  <!-- NAV -->
+  <header>
+    <nav class="bg-white border-b border-gray-200 fixed w-full z-40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <a href="index.html" class="text-2xl font-bold text-[#3C2415] font-[Montserrat]">Brew & Beans</a>
+          <div class="hidden md:flex items-center space-x-6 text-base">
+            <a href="index.html" class="hover:text-[#8B4513]">Home</a>
+            <a href="menu.html" class="hover:text-[#8B4513]">Menu</a>
+            <a href="about.html" class="hover:text-[#8B4513]">About</a>
+            <a href="contact.html" class="hover:text-[#8B4513]">Contact</a>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button id="mobile-menu-button" class="text-[#3C2415] hover:text-[#8B4513] focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden px-2 pt-2 pb-3 space-y-1">
+        <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-[#3C2415] hover:bg-[#f3efe3]">Home</a>
+        <a href="menu.html" class="block px-3 py-2 rounded-md text-base font-medium text-[#3C2415] hover:bg-[#f3efe3]">Menu</a>
+        <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-[#3C2415] hover:bg-[#f3efe3]">About</a>
+        <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-[#3C2415] hover:bg-[#f3efe3]">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-16">
+    <!-- HERO -->
+    <section class="min-h-screen flex items-center justify-center relative bg-cover bg-center" style="background-image: url('https://pixabay.com/get/g3d895f1c40fae5737ba344334773dd4a2ef21bde5f99d97f0444cb5f99cc284d1dfcb6aef63c41022c41f7013ef1e74b971dc18f4fdecf65ec93df152d08629d_640.jpg');">
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div class="relative z-10 text-center text-white px-4 max-w-3xl">
+        <h1 class="text-4xl md:text-6xl font-bold font-[Montserrat] mb-4">Our Menu</h1>
+        <p class="text-lg md:text-2xl mb-6">From bold espressos to flaky pastries, comfort in every bite and sip.</p>
+      </div>
+    </section>
+
+    <!-- Coffee Drinks -->
+    <section class="py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold font-[Montserrat] mb-4 text-[#3C2415]">Coffee Drinks</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="flex items-center gap-4 bg-white rounded-xl p-4 shadow hover:shadow-lg transition">
+            <img src="https://images.pexels.com/photos/2868980/pexels-photo-2868980.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Espresso" class="w-20 h-20 object-cover rounded" />
+            <div class="flex-1">
+              <h3 class="font-semibold">Espresso</h3>
+              <p class="text-sm text-gray-600">Single-origin notes, rich and intense.</p>
+            </div>
+            <div class="text-right font-semibold">$3.00</div>
+          </div>
+          <div class="flex items-center gap-4 bg-white rounded-xl p-4 shadow hover:shadow-lg transition">
+            <img src="https://images.unsplash.com/photo-1509895468733-11b816ae3a7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw5fHxsYXR0ZSUyMGN1cCUyMHdpdGglMjBsYXR0ZSUyMGFydHxlbnwwfDB8fHwxNzU5NzM4NzIyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Latte" class="w-20 h-20 object-cover rounded" />
+            <div class="flex-1">
+              <h3 class="font-semibold">Latte</h3>
+              <p class="text-sm text-gray-600">Creamy milk, smooth espresso, art in every cup.</p>
+            </div>
+            <div class="text-right font-semibold">$4.50</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pastries -->
+    <section class="py-12 bg-white/90">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold font-[Montserrat] mb-4 text-[#3C2415]">Pastries</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-[#F3F0EA] p-4 rounded-xl shadow-sm">
+            <img src="https://images.unsplash.com/photo-1712262583546-8caaeb0e4761?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw3fHxjcm9pc3NhbnQlMjBvbiUyMHBsYXRlfGVufDB8MHx8fDE3NTk3Mzg3MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Croissant" class="w-full h-40 object-cover rounded" />
+            <div class="mt-2 font-semibold">Butter Croissant</div>
+            <div class="text-sm text-gray-700">Light, flaky, perfect with a morning brew.</div>
+          </div>
+          <div class="bg-[#F3F0EA] p-4 rounded-xl shadow-sm">
+            <img src="https://pixabay.com/get/gee9d8d12718beb8133483923cc522d143b973c053a9480dc89dd3c20149143fa65c81c57ead9f34dfc667c8d4eafb2e70358914ac36198e7e5dfeca53bdd61a0_640.jpg" alt="Almond pastry" class="w-full h-40 object-cover rounded" />
+            <div class="mt-2 font-semibold">Almond Pastry</div>
+            <div class="text-sm text-gray-700">Toasted almonds and almond cream filling.</div>
+          </div>
+          <div class="bg-[#F3F0EA] p-4 rounded-xl shadow-sm">
+            <img src="https://pixabay.com/get/g4a5457b0039f378ae68436261b407d1177e5748fcaebd658ada485c7694f198f8d4fbe20dbf6a986b9a4a1909fbbe77e81d47bfcf7edb89ac63ec83e2078199d_640.jpg" alt="Blueberry muffin" class="w-full h-40 object-cover rounded" />
+            <div class="mt-2 font-semibold">Blueberry Muffin</div>
+            <div class="text-sm text-gray-700">Moist, fruity, a touch of citrus zest.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="py-12 bg-white/90">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-2xl font-bold font-[Montserrat] mb-4 text-[#3C2415]">About Brew & Beans</h2>
+          <p class="text-gray-700 leading-relaxed">We roast small-batch coffee daily and bake pastries fresh in-house. Our goal is to create a space where people feel at home—whether you’re catching up with friends, grinding through a project, or taking a moment to pause with a perfect cup.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1681073302782-10f85371deb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxMHx8Y296eSUyMGNhZmUlMjBpbnRlcmlvcnxlbnwwfDB8fHwxNzU5NzM4NzI0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Cozy cafe interior" class="w-full rounded-xl shadow" />
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="py-12">
+      <div class="text-center">
+        <a href="contact.html" class="bg-[#D2B48C] text-[#3C2415] px-6 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-[#D2B48C]/50 transition">Contact Us for Catering</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#3C2415] text-white mt-8">
+    <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="text-2xl font-bold mb-2 font-[Montserrat]">Brew & Beans</h3>
+        <p class="text-sm text-[#f3f0ea]">Boutique coffee shop with in-house roasting and artisan pastries.</p>
+        <p class="text-sm text-[#f3f0ea] mt-2">Fair Trade Certified • Locally Roasted Since 2020</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-2 font-[Montserrat]">Hours</h4>
+        <p class="text-sm text-[#f3f0ea]">Mon-Fri: 6:30am - 6:00pm</p>
+        <p class="text-sm text-[#f3f0ea]">Sat-Sun: 7:00am - 5:00pm</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-2 font-[Montserrat]">Menu</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="menu.html" class="text-[#f3f0ea] hover:underline">Coffee Drinks</a></li>
+          <li><a href="menu.html#pastries" class="text-[#f3f0ea] hover:underline">Pastries</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-2 font-[Montserrat]">Stay Connected</h4>
+        <p class="text-sm text-[#f3f0ea]">Follow us for new roasts and seasonal offers.</p>
+      </div>
+    </div>
+    <div class="border-t border-gray-600 py-4 text-center text-sm text-gray-300">© 2025 Brew & Beans. All rights reserved.</div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    }
+  </script>
+</body>
+</html>
